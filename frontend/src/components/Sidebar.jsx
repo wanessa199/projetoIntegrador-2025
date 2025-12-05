@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-
+import logo from '../../public/ondas-do-mar 6.png'
 function Sidebar() {
   const { usuario, logout } = useAuth(); // ESSA LINHA É OBRIGATÓRIA
 
   return (
     <div className="sidebar">
       <div className="logo-sidebar">
-        <img src="/logo.png" alt="Águas Vivas" />
+        <img src={logo} alt="Águas Vivas" />
         Águas Vivas
       </div>
 

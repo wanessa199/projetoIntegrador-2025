@@ -1,3 +1,10 @@
+import imagem1 from '../../public/frame 12.png'
+import imagem2 from '../../public/frame 14.png'
+import imagem3 from '../../public/frame 15.png'
+import imagem4 from '../../public/frame 16.png'
+import imagem5 from '../../public/frame 17.png'
+import imagem6 from '../../public/frame 19.png'
+
 function AtuacaoNacional() {
   return (
     <div className="pagina-atuacao">
@@ -19,7 +26,7 @@ function AtuacaoNacional() {
         {/* CIDADE 1 - Juazeiro do Norte */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/3vR8kLp.jpeg" alt="Juazeiro do Norte" />
+            <img src={imagem1} alt="Juazeiro do Norte" />
             <div className="overlay-cidade">CE Juazeiro do Norte</div>
           </div>
           <div className="conteudo-cidade">
@@ -32,7 +39,7 @@ function AtuacaoNacional() {
         {/* CIDADE 2 - Aracaju */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/7pX9mZc.jpeg" alt="Aracaju" />
+            <img src={imagem2} alt="Aracaju" />
             <div className="overlay-cidade">SE Aracaju</div>
           </div>
           <div className="conteudo-cidade">
@@ -45,7 +52,7 @@ function AtuacaoNacional() {
         {/* CIDADE 3 - Uberaba */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/5tY6nJw.jpeg" alt="Uberaba" />
+            <img src={imagem5} alt="Uberaba" />
             <div className="overlay-cidade">MG Uberaba</div>
           </div>
           <div className="conteudo-cidade">
@@ -58,7 +65,7 @@ function AtuacaoNacional() {
         {/* CIDADE 4 - Cuiabá */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/1qA4zXs.jpeg" alt="Cuiabá" />
+            <img src={imagem3} alt="Cuiabá" />
             <div className="overlay-cidade">MT Cuiabá</div>
           </div>
           <div className="conteudo-cidade">
@@ -71,7 +78,7 @@ function AtuacaoNacional() {
         {/* CIDADE 5 - Rio Grande */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/8dR5kLm.jpeg" alt="Rio Grande" />
+            <img src={imagem6} alt="Rio Grande" />
             <div className="overlay-cidade">RS Rio Grande</div>
           </div>
           <div className="conteudo-cidade">
@@ -84,7 +91,7 @@ function AtuacaoNacional() {
         {/* CIDADE 6 - Uberlândia */}
         <div className="cidade-card">
           <div className="foto-cidade">
-            <img src="https://i.imgur.com/9kL2mNx.jpeg" alt="Uberlândia" />
+            <img src={imagem4} alt="Uberlândia" />
             <div className="overlay-cidade">MG Uberlândia</div>
           </div>
           <div className="conteudo-cidade">

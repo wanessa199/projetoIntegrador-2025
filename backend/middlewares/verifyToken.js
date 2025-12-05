@@ -1,6 +1,8 @@
 import jwt from 'jsonwebtoken';
 import { getToken } from '../shared/function/getToken.js';
 
+       const JWT_SECRET = process.env.JWT_SECRET || 'aguasvivas2025_fallback_seguro_muito_forte';
+
 export const verifyToken = (req, res, next) => {
     try {
         if (!req.headers.authorization) {
@@ -16,7 +18,7 @@ export const verifyToken = (req, res, next) => {
             throw err;
         }
 
-        const verified = jwt.verify(token, process.env.JWT_SECRET);
+        const verified = jwt.verify(token, JWT_SECRET);
         req.usuario = verified;
         next();
 

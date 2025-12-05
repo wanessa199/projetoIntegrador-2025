@@ -1,3 +1,10 @@
+import imagemDestaque from '../../public/image 21.png'
+import imagem1 from '../../public/frame 12.png'
+import imagem2 from '../../public/frame 14.png'
+import imagem3 from '../../public/frame 15.png'
+import imagem4 from '../../public/frame 16.png'
+import imagem5 from '../../public/frame 17.png'
+
 function Noticias() {
   return (
     <div className="pagina-noticias">
@@ -11,7 +18,7 @@ function Noticias() {
 
       {/* Card Destaque Grande */}
       <div className="card-destaque">
-        <img src="/noticia-destaque.jpg" alt="Destaque" className="img-destaque" />
+        <img src={imagemDestaque} alt="Destaque" className="img-destaque" />
         <div className="conteudo-destaque">
           <div className="tag-destaque">Destaque</div>
           <div className="tag-conquista">Conquistas</div>
@@ -25,43 +32,43 @@ function Noticias() {
       {/* Grid de Notícias */}
       <div className="grid-noticias">
         <div className="card-noticia">
-          <img src="/uberlandia.jpg" alt="Uberlândia" />
+          <img src={imagem1} alt="Uberlândia" />
           <h3>Participantes de Uberlândia Desenvolvem Sistema de Aproveitamento de Água</h3>
           <p>Alunas criam solução sustentável para captação de água em comunidades carentes.</p>
           <p className="autor-data">Maria Santos • 02 de setembro de 2025</p>
-          <button className="btn-ler-mais pequeno">Ler mais</button>
+         
         </div>
 
         <div className="card-noticia">
-          <img src="/mulheres-saneamento.jpg" alt="Mulheres no Saneamento" />
+          <img src={imagem2} alt="Mulheres no Saneamento" />
           <h3>Mulheres no Saneamento: O impacto das Guardiãs na transformação de comunidades</h3>
           <p>Relatório revela mudanças reais promovidas pelas participantes do projeto.</p>
           <p className="autor-data">Anderson Santos • 28 de fevereiro de 2025</p>
-          <button className="btn-ler-mais pequeno">Ler mais</button>
+         
         </div>
 
         <div className="card-noticia">
-          <img src="/aracaju.jpg" alt="Aracaju" />
+          <img src={imagem3} alt="Aracaju" />
           <h3>Ação em Aracaju Recolhe 2 toneladas de Resíduos do Rio</h3>
           <p>Mais de 80 alunas participam de grande mutirão organizado pelas Guardiãs.</p>
           <p className="autor-data">Ana Silva • 20 de janeiro de 2025</p>
-          <button className="btn-ler-mais pequeno">Ler mais</button>
+         
         </div>
 
         <div className="card-noticia">
-          <img src="/juazeiro.jpg" alt="Juazeiro" />
+          <img src={imagem4} alt="Juazeiro" />
           <h3>Juazeiro do Norte Recebe Prêmio por Projeto de Gestão Hídrica</h3>
           <p>Iniciativa liderada por alunas é reconhecida nacionalmente por inovação em recursos hídricos.</p>
           <p className="autor-data">Carla Oliveira • 15 de dezembro de 2024</p>
-          <button className="btn-ler-mais pequeno">Ler mais</button>
+         
         </div>
 
         <div className="card-noticia">
-          <img src="/workshop.jpg" alt="Workshop" />
+          <img src={imagem5} alt="Workshop" />
           <h3>Workshop em Cuiabá Aborda Presença do Pantanal</h3>
           <p>Evento discute a importância da preservação do bioma e o papel das mulheres na luta ambiental.</p>
           <p className="autor-data">Carlos Oliveira • 10 de agosto de 2025</p>
-          <button className="btn-ler-mais pequeno">Ler mais</button>
+         
         </div>
       </div>
 

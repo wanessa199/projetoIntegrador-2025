@@ -1,3 +1,5 @@
+import iconeEscudo from '../../public/escudo1.png'
+
 function CanaisApoio() {
   return (
     <div className="pagina-canais">
@@ -13,17 +15,18 @@ function CanaisApoio() {
         <h2>Contatos de Emergência</h2>
         <div className="cards-emergencia">
           <div className="card-emergencia">
-            <div className="icone-escudo">Shield</div>
+              <img src={iconeEscudo} alt="Destaque" className="icone-escudo" />
             <h3>IBAMA - Instituto Brasileiro do Meio Ambiente</h3>
+            
             <p className="telefone">0800-61-8080</p>
           </div>
           <div className="card-emergencia">
-            <div className="icone-escudo">Shield</div>
+                 <img src={iconeEscudo} alt="Destaque" className="icone-escudo" />
             <h3>ANA Agência Nacional de Águas</h3>
             <p className="telefone">(61) 2109-5400</p>
           </div>
           <div className="card-emergencia">
-            <div className="icone-escudo">Shield</div>
+               <img src={iconeEscudo} alt="Destaque" className="icone-escudo" />
             <h3>Defesa Civil</h3>
             <p className="telefone">199</p>
           </div>

@@ -12,17 +12,22 @@ function Login() {
 
   // Validação de senha forte (mínimo 8 caracteres, maiúscula, minúscula, número e caractere especial)
   const validarSenha = (valor) => {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if (!regex.test(valor)) {
-      setErroSenha(
-        'A senha deve ter no mínimo 8 caracteres, incluindo 1 maiúscula, 1 minúscula, 1 número e 1 caractere especial (@$!%*?&).'
-      );
-      return false;
-    }
-    setErroSenha('');
-    return true;
-  };
+  if (valor.length < 8) {
+    setErroSenha('A senha deve ter no mínimo 8 caracteres');
+    return false;
+  }
 
+  // Aceita QUALQUER caractere especial (não só @$!%*?&)
+  const temCaractereEspecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(valor);
+  
+  if (!temCaractereEspecial) {
+    setErroSenha('A senha deve conter pelo menos 1 caractere especial (ex: ! @ # $ % & * ?)');
+    return false;
+  }
+
+  setErroSenha('');
+  return true;
+};
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -120,17 +125,6 @@ function Login() {
             </span>
           </p>
 
-          {/* Dicas de senha (só no cadastro) */}
-          {isRegister && (
-            <div className="dicas-senha">
-              <small>
-                <strong>A senha deve conter:</strong><br />
-                • Mínimo 8 caracteres<br />
-                • 1 letra maiúscula • 1 letra minúscula<br />
-                • 1 número • 1 caractere especial (@$!%*?&)
-              </small>
-            </div>
-          )}
         </div>
       </div>
     </>

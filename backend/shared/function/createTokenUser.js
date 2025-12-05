@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+const JWT_SECRET = process.env.JWT_SECRET || 'aguasvivas2025_fallback_seguro_muito_forte';
 
 export const createTokenUser = (usuario, req, res) => {
     const token = jwt.sign(

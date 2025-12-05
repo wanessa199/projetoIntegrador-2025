@@ -1,3 +1,14 @@
+import imageMar from '../assets/pexels-photo-1001682 1.png';  
+
+import iconExcelencia from '../assets/medalha-estrela 1.png';
+import iconColaboracao from '../assets/pessoas 2.png';
+import iconImpacto from '../assets/protecao-ambiental 1.png';
+import imagemYris from '../assets/unnamed.jpg';
+import imagemWanessa from '../assets/IMG_5954.png';
+import imagemJulia from '../assets/IMG_4344.jpeg';
+import imagemAnderson from '../assets/andersondocapa.jpg';
+
+
 function EducacaoAmbiental() {
   return (
     <div className="pagina-educacao">
@@ -26,7 +37,7 @@ function EducacaoAmbiental() {
         </div>
 
         <div className="imagem-impacto">
-          <img src="https://i.imgur.com/8vJ8z9K.jpeg" alt="Água limpa" />
+          <img src={imageMar} alt="Água limpa" />
           <div className="badge-impacto">
             500+
             <span>alunas impactadas</span>
@@ -34,22 +45,27 @@ function EducacaoAmbiental() {
         </div>
       </section>
 
-      {/* VALORES */}
+     {/* VALORES COM ÍCONES REAIS (aqui está o que você pediu) */}
       <section className="valores">
         <div className="card-valor excelencia">
-          <div className="icone-valor">Trophy</div>
+          <div className="icone-valor">
+            <img src={iconExcelencia} alt="Excelência" />
+          </div>
           <h3>Excelência</h3>
           <p>Reconhecimento nacional pela qualidade do programa educacional</p>
         </div>
 
         <div className="card-valor colaboracao">
-          <div className="icone-valor">Users</div>
+          <div className="icone-valor">
+            <img src={iconColaboracao} alt="Colaboração" />
+          </div>
           <h3>Colaboração</h3>
           <p>Parcerias com instituições públicas e privadas</p>
         </div>
-
         <div className="card-valor impacto">
-          <div className="icone-valor">Heart</div>
+          <div className="icone-valor">
+            <img src={iconImpacto} alt="Impacto Social" />
+          </div>
           <h3>Impacto Social</h3>
           <p>Transformação real nas comunidades participantes</p>
         </div>
@@ -62,24 +78,29 @@ function EducacaoAmbiental() {
 
         <div className="membros-equipe">
           <div className="membro">
-            <img src="https://i.imgur.com/3vR8kLp.jpeg" alt="Ana Silva" />
-            <h4>Ana Silva</h4>
+            <img src={imagemYris} alt="Ana Silva" />
+            <h4>Clara Yris</h4>
+            <p>Designer UX/UI</p>
+          </div>
+          <div className="membro">
+         <img src={imagemJulia} alt="Ana Silva" />
+            <h4>Júlia Rita</h4>
+            <p>Desenvolvedora Front End</p>
+          </div>
+          <div className="membro">
+               <img src={imagemWanessa} alt="Ana Silva" />
+            <h4>Wanessa Sabrina</h4>
             <p>Coordenadora Geral</p>
           </div>
           <div className="membro">
-            <img src="https://i.imgur.com/7pX9mZc.jpeg" alt="Helena Santos" />
-            <h4>Helena Santos</h4>
-            <p>Coordenadora Geral</p>
+           <img src={imagemAnderson} alt="Ana Silva" />
+            <h4>Anderson Silva</h4>
+            <p>Designer UX/UI</p>
           </div>
           <div className="membro">
-            <img src="https://i.imgur.com/5tY6nJw.jpeg" alt="Laura Oliveira" />
-            <h4>Laura Oliveira</h4>
-            <p>Coordenadora Geral</p>
-          </div>
-          <div className="membro">
-            <img src="https://i.imgur.com/1qA4zXs.jpeg" alt="Alice Silva" />
-            <h4>Alice Silva</h4>
-            <p>Coordenadora Geral</p>
+           <img src={imagemAnderson} alt="Ana Silva" />
+            <h4>Victor Gabriel </h4>
+            <p>Desenvolvedor Back End</p>
           </div>
         </div>
       </section>

@@ -1,3 +1,9 @@
+import imagem1 from '../../public/frame 12.png'
+import imagem2 from '../../public/frame 14.png'
+import imagem3 from '../../public/frame 15.png'
+import imagem4 from '../../public/frame 16.png'
+import imagem5 from '../../public/frame 17.png'
+
 function Projetos() {
   return (
     <div className="pagina-projetos">
@@ -12,9 +18,9 @@ function Projetos() {
 
       {/* PRÓXIMOS EVENTOS */}
       <section className="proximos-eventos">
-        <h2>Próximos Eventos</h2>
-
+      
         <div className="lista-eventos">
+            <h2 className="h2Eventos">Próximos Eventos</h2>
           <div className="evento-card">
             <div className="data-evento">
               <span className="dia">14</span>
@@ -72,9 +78,9 @@ function Projetos() {
             <h3>Workshop de Captação de Água da Chuva</h3>
             <p>14 de setembro de 2025 • 35 participantes</p>
             <div className="fotos-evento">
-              <img src="https://i.imgur.com/2fK3j8P.jpeg" alt="Workshop" />
-              <img src="https://i.imgur.com/8dR5kLm.jpeg" alt="Grupo" />
-              <img src="https://i.imgur.com/9kL2mNx.jpeg" alt="Água" />
+              <img src={imagem1} alt="Workshop" />
+              <img src={imagem2} alt="Grupo" />
+              <img src={imagem3} alt="Água" />
             </div>
           </div>
 
@@ -82,10 +88,10 @@ function Projetos() {
             <h3>Seminário de Recursos Hídricos</h3>
             <p>19 de agosto de 2025 • 80 participantes</p>
             <div className="fotos-evento">
-              <img src="https://i.imgur.com/7pX9mZc.jpeg" alt="Palestra" />
-              <img src="https://i.imgur.com/3vR8kLp.jpeg" alt="Público" />
-              <img src="https://i.imgur.com/5tY6nJw.jpeg" alt="Equipe" />
-              <img src="https://i.imgur.com/1qA4zXs.jpeg" alt="Certificado" />
+              <img src={imagem4} alt="Palestra" />
+              <img src={imagem2} alt="Público" />
+              <img src={imagem1} alt="Equipe" />
+              <img src={imagem5} alt="Certificado" />
             </div>
           </div>
         </div>

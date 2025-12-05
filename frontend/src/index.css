@@ -398,7 +398,12 @@ body {
   font-size: 0.9rem;
   margin: 15px 0;
 }
-
+.secretarias-municipais{
+  margin-top: 30px;
+}
+.h2Eventos{
+  margin-top: -50px;
+}
 .btn-ler-mais {
   background: #2196f3;
   color: white;
@@ -1275,6 +1280,87 @@ body {
 .card-valor.excelencia { background: #e3f2fd; }
 .card-valor.colaboracao { background: #e8f5e8; }
 .card-valor.impacto { background: #f3e5f5; }
+
+/* BOTÕES RÁPIDOS COM ÍCONES EM CIMA */
+.botoes-rapidos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.botao-icone {
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.botao-icone:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.25);
+}
+
+.icone-wrapper {
+  width: 70px;
+  height: 70px;
+  background: #e8f5e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 15px;
+}
+
+.icone-rapido {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.texto-botao {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* CIDADES PARTICIPANTES (melhorado) */
+.cidade-card span {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .botoes-rapidos {
+    gap: 20px;
+  }
+  .botao-icone {
+    width: 140px;
+    height: 140px;
+  }
+  .icone-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .icone-valor {
   font-size: 3.5rem;
