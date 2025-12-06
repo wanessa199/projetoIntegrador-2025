@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use('/api/auth', autenticacaoRoutes);
 
-// Rota protegida de teste
+
 app.get('/api/protegido', (req, res) => {
     res.json({ success: true, message: 'Você está autenticado!' });
 });

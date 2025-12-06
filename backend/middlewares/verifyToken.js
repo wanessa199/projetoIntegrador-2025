@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { getToken } from '../shared/function/getToken.js';
 
-// CHAVE COM FALLBACK → nunca dá erro de secret undefined
+
 const JWT_SECRET = process.env.JWT_SECRET || 'aguasvivas2025_fallback_seguro_muito_f_forte';
 
 export const verifyToken = (req, res, next) => {

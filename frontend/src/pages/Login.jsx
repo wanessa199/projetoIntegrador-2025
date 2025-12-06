@@ -10,14 +10,14 @@ function Login() {
   const [erroSenha, setErroSenha] = useState('');
   const { login, registrar } = useAuth();
 
-  // Validação de senha forte (mínimo 8 caracteres, maiúscula, minúscula, número e caractere especial)
+  
   const validarSenha = (valor) => {
   if (valor.length < 8) {
     setErroSenha('A senha deve ter no mínimo 8 caracteres');
     return false;
   }
 
-  // Aceita QUALQUER caractere especial (não só @$!%*?&)
+
   const temCaractereEspecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(valor);
   
   if (!temCaractereEspecial) {
@@ -81,7 +81,7 @@ function Login() {
                 required
               />
 
-              {/* Feedback da senha no cadastro */}
+             
               {isRegister && erroSenha && (
                 <div className="erro-senha">{erroSenha}</div>
               )}
@@ -90,7 +90,7 @@ function Login() {
               )}
             </div>
 
-            {/* Lembre de mim (só no login) */}
+          
             {!isRegister && (
               <div className="checkbox-lembrar">
                 <input type="checkbox" id="lembrar" />
@@ -101,25 +101,25 @@ function Login() {
             <button
               type="submit"
               className="botao-verde"
-              disabled={isRegister && erroSenha} // desativa se a senha for fraca
+              disabled={isRegister && erroSenha}
             >
               {isRegister ? 'Cadastrar' : 'Entrar'}
             </button>
           </form>
 
-          {/* Esqueceu a senha (só no login) */}
+       
           {!isRegister && (
             <a href="#" className="link-esqueceu">
               Esqueceu a senha?
             </a>
           )}
 
-          {/* Toggle entre login e cadastro */}
+     
           <p className="toggle-auth">
             {isRegister ? 'Já tem conta?' : 'Ainda não tem conta?'}{' '}
             <span onClick={() => {
               setIsRegister(!isRegister);
-              setErroSenha(''); // limpa erro ao trocar
+              setErroSenha(''); 
             }}>
               {isRegister ? 'Faça login' : 'Cadastre-se'}
             </span>

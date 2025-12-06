@@ -23,7 +23,7 @@ function AtuacaoNacional() {
       </p>
 
       <div className="cidades-container">
-        {/* CIDADE 1 - Juazeiro do Norte */}
+     
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem1} alt="Juazeiro do Norte" />
@@ -36,7 +36,7 @@ function AtuacaoNacional() {
           </div>
         </div>
 
-        {/* CIDADE 2 - Aracaju */}
+      
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem2} alt="Aracaju" />
@@ -49,7 +49,7 @@ function AtuacaoNacional() {
           </div>
         </div>
 
-        {/* CIDADE 3 - Uberaba */}
+     
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem5} alt="Uberaba" />
@@ -62,7 +62,7 @@ function AtuacaoNacional() {
           </div>
         </div>
 
-        {/* CIDADE 4 - Cuiabá */}
+   
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem3} alt="Cuiabá" />
@@ -75,7 +75,7 @@ function AtuacaoNacional() {
           </div>
         </div>
 
-        {/* CIDADE 5 - Rio Grande */}
+       
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem6} alt="Rio Grande" />
@@ -88,7 +88,7 @@ function AtuacaoNacional() {
           </div>
         </div>
 
-        {/* CIDADE 6 - Uberlândia */}
+      
         <div className="cidade-card">
           <div className="foto-cidade">
             <img src={imagem4} alt="Uberlândia" />
@@ -102,7 +102,7 @@ function AtuacaoNacional() {
         </div>
       </div>
 
-      {/* CHAMADA FINAL */}
+      
       <div className="chamada-final">
         <div className="balao-chamada">
           Quer trazer o projeto para sua cidade?

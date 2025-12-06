@@ -1,16 +1,16 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-
+import logo from '../../public/ondas-do-mar 6.png'
 function Cabecalho() {
   const { usuario, logout } = useAuth();
   const location = useLocation();
 
-  // Se já estiver logado → mostra nome + sair
+
   if (usuario) {
     return (
       <div className="navbar">
         <div className="logo">
-          <img src="/logo.png" alt="Águas Vivas" />
+          <img src={logo} alt="Águas Vivas" />
           Águas Vivas
         </div>
         <div className="navegacao">
@@ -23,29 +23,15 @@ function Cabecalho() {
     );
   }
 
-  // Se NÃO estiver logado → mostra os links com state
+
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="/logo.png" alt="Águas Vivas" />
+        <img src={logo} alt="Águas Vivas" />
         Águas Vivas
       </div>
       <div className="navegacao">
-        <Link 
-          to="/login" 
-          state={{ modo: 'login' }}
-          className={location.pathname === '/login' && location.state?.modo !== 'cadastro' ? 'ativo' : ''}
-        >
-          Entrar
-        </Link>
-
-        <Link 
-          to="/login" 
-          state={{ modo: 'cadastro' }}
-          className={location.pathname === '/login' && location.state?.modo === 'cadastro' ? 'ativo' : ''}
-        >
-          Registrar
-        </Link>
+       Sejam bem vindos!
       </div>
     </div>
   );

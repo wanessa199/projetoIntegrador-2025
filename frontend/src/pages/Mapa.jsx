@@ -3,7 +3,6 @@ import { Icon } from 'leaflet'
 import { useState } from 'react'
 import L from 'leaflet'
 
-// Ícone customizado pro pin (vermelho, como nas imagens)
 const pinIcon = new L.Icon({
   iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -54,7 +53,7 @@ function Mapa() {
     }
   ]
 
-  // Componente pra capturar cliques no mapa (opcional, pra fechar popup)
+
   function MapClickHandler() {
     useMapEvents({
       click: () => setCidadeSelecionada(null)
@@ -74,7 +73,7 @@ function Mapa() {
 
       <div className="container-mapa">
         <MapContainer
-          center={[-14.2350, -51.9253]} // Centro do Brasil
+          center={[-14.2350, -51.9253]} 
           zoom={4}
           style={{ height: '600px', width: '100%' }}
           className="mapa-leaflet"
@@ -107,7 +106,7 @@ function Mapa() {
           ))}
         </MapContainer>
 
-        {/* Balão extra se quiser ao lado (opcional, já que popup do Leaflet é top) */}
+       
         {cidadeSelecionada && (
           <div className="balao-info">
             <button className="fechar-balao" onClick={() => setCidadeSelecionada(null)}>×</button>

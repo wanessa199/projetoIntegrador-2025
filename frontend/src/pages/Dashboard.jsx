@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
-// ÍCONES DOS BOTÕES RÁPIDOS (suas imagens na public/)
+
 import iconPessoas from '../../public/pessoas 1.png';
 import iconEducacao from '../../public/livro 1.png';
 import iconAgenda from '../../public/calendario 1.png';
 import iconNoticias from '../../public/noticia 1.png';
 import iconContato from '../../public/telefone 1.png';
 
-// ÍCONES DE MISSÃO, VISÃO E VALORES (lindos e combinando)
+
 import iconMissao from '../assets/pingo-dagua 1.png';    
 import iconVisao from '../assets/visao 1.png';       
 import iconValores from '../assets/radar1.png';  
@@ -23,13 +23,13 @@ function Dashboard() {
 
   return (
     <>
-      {/* BANNER PRINCIPAL */}
+ 
       <div className="banner-principal">
         <h1>Cuidar da água é cuidar da vida</h1>
         <p>Educação ambiental, saneamento básico e protagonismo feminino para um futuro sustentável.</p>
       </div>
 
-      {/* BOTÕES RÁPIDOS */}
+   
       <div className="botoes-rapidos">
         {botoesRapidos.map((botao, index) => (
           <Link to={botao.link} key={index} className="botao-icone">
@@ -41,7 +41,7 @@ function Dashboard() {
         ))}
       </div>
 
-      {/* MISSÃO, VISÃO E VALORES COM ÍCONES REAIS */}
+
       <div className="cards-missao-visao">
         <div className="card-missao">
           <div className="icone-mvv">
@@ -68,7 +68,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* FAÇA PARTE DA MUDANÇA */}
+
       <div className="secao-mudanca">
         <h2>Faça Parte da Mudança</h2>
         <p>Junte-se a centenas de estudantes que estão transformando suas comunidades através da educação ambiental e do cuidado com os recursos hídricos.</p>
@@ -78,7 +78,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* CIDADES PARTICIPANTES */}
+    
       <div className="cidades-participantes">
         <div className="cidade-card">CE<br/><span>Juazeiro do Norte</span></div>
         <div className="cidade-card">SE<br/><span>Aracajú</span></div>

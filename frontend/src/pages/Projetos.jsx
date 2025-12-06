@@ -16,7 +16,7 @@ function Projetos() {
         </div>
       </div>
 
-      {/* PRÓXIMOS EVENTOS */}
+      
       <section className="proximos-eventos">
       
         <div className="lista-eventos">
@@ -68,7 +68,7 @@ function Projetos() {
         </div>
       </section>
 
-      {/* EVENTOS REALIZADOS */}
+      
       <section className="eventos-realizados">
         <h2>Eventos Realizados</h2>
         <p className="subtitulo">Galeria de fotos dos últimos eventos</p>

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import logo from '../../public/ondas-do-mar 6.png'
 function Sidebar() {
-  const { usuario, logout } = useAuth(); // ESSA LINHA É OBRIGATÓRIA
+  const { usuario, logout } = useAuth(); 
 
   return (
     <div className="sidebar">
@@ -11,7 +11,7 @@ function Sidebar() {
         Águas Vivas
       </div>
 
-      {/* Mostra nome do usuário logado */}
+
       {usuario && (
         <div className="usuario-info">
           <p>Olá, <strong>{usuario.nome}!😊</strong></p>
@@ -45,7 +45,7 @@ function Sidebar() {
         </NavLink>
       </nav>
 
-      {/* Botão de sair */}
+
       {usuario && (
         <button onClick={logout} className="btn-sair">
           Sair

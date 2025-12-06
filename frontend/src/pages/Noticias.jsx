@@ -8,7 +8,7 @@ import imagem5 from '../../public/frame 17.png'
 function Noticias() {
   return (
     <div className="pagina-noticias">
-      {/* Título principal com balãozinho */}
+  
       <div className="cabecalho-noticias">
         <h1>Notícias</h1>
         <div className="balao-noticias">
@@ -16,7 +16,7 @@ function Noticias() {
         </div>
       </div>
 
-      {/* Card Destaque Grande */}
+    
       <div className="card-destaque">
         <img src={imagemDestaque} alt="Destaque" className="img-destaque" />
         <div className="conteudo-destaque">
@@ -29,7 +29,7 @@ function Noticias() {
         </div>
       </div>
 
-      {/* Grid de Notícias */}
+    
       <div className="grid-noticias">
         <div className="card-noticia">
           <img src={imagem1} alt="Uberlândia" />
@@ -72,7 +72,7 @@ function Noticias() {
         </div>
       </div>
 
-      {/* Newsletter no final */}
+     
       <div className="newsletter">
         <p>Receba as Novidades por E-mail!</p>
         <div className="form-newsletter">

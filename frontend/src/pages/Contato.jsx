@@ -11,7 +11,7 @@ function Contato() {
       </div>
 
       <div className="container-contato">
-        {/* FORMULÁRIO À ESQUERDA */}
+      
         <div className="formulario-contato">
           <h2>Envie uma Mensagem</h2>
           <form>
@@ -33,7 +33,7 @@ function Contato() {
           </form>
         </div>
 
-        {/* INFORMAÇÕES À DIREITA */}
+        
         <div className="info-contato">
           <h2>Informações de Contato</h2>
 
@@ -68,7 +68,7 @@ function Contato() {
         </div>
       </div>
 
-      {/* LOCALIZAÇÃO NO FINAL */}
+      
       <div className="localizacao">
         <div className="balao-localizacao">
           <strong>Localização:</strong> SENAI Uberlândia
