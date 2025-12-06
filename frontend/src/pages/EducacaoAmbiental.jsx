@@ -4,7 +4,8 @@ import iconExcelencia from '../assets/medalha-estrela 1.png';
 import iconColaboracao from '../assets/pessoas 2.png';
 import iconImpacto from '../assets/protecao-ambiental 1.png';
 import imagemYris from '../assets/unnamed.jpg';
-import imagemWanessa from '../assets/IMG_5954.png';
+import imagemWanessa from '../assets/cbcab80c-ba69-4ed0-8a51-5f41776cab84.jpg';
+import imagemBiel from '../assets/820790ee-35b8-4a2a-b021-e0318c4e04a7.jpg';
 import imagemJulia from '../assets/IMG_4344.jpeg';
 import imagemAnderson from '../assets/andersondocapa.jpg';
 
@@ -78,27 +79,27 @@ function EducacaoAmbiental() {
 
         <div className="membros-equipe">
           <div className="membro">
-            <img src={imagemYris} alt="Ana Silva" />
+            <img src={imagemYris} alt="Yris" />
             <h4>Clara Yris</h4>
             <p>Designer UX/UI</p>
           </div>
           <div className="membro">
-         <img src={imagemJulia} alt="Ana Silva" />
+         <img src={imagemJulia} alt="Julia" />
             <h4>Júlia Rita</h4>
             <p>Desenvolvedora Front End</p>
           </div>
           <div className="membro">
-               <img src={imagemWanessa} alt="Ana Silva" />
+               <img src={imagemWanessa} alt="Wanessa" />
             <h4>Wanessa Sabrina</h4>
             <p>Coordenadora Geral</p>
           </div>
           <div className="membro">
-           <img src={imagemAnderson} alt="Ana Silva" />
+           <img src={imagemAnderson} alt="Anderson" />
             <h4>Anderson Silva</h4>
             <p>Designer UX/UI</p>
           </div>
           <div className="membro">
-           <img src={imagemAnderson} alt="Ana Silva" />
+           <img src={imagemBiel} alt="Gabriel" />
             <h4>Victor Gabriel </h4>
             <p>Desenvolvedor Back End</p>
           </div>

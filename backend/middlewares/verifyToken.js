@@ -1,7 +1,8 @@
 import jwt from 'jsonwebtoken';
 import { getToken } from '../shared/function/getToken.js';
 
-       const JWT_SECRET = process.env.JWT_SECRET || 'aguasvivas2025_fallback_seguro_muito_forte';
+// CHAVE COM FALLBACK → nunca dá erro de secret undefined
+const JWT_SECRET = process.env.JWT_SECRET || 'aguasvivas2025_fallback_seguro_muito_f_forte';
 
 export const verifyToken = (req, res, next) => {
     try {
@@ -18,6 +19,7 @@ export const verifyToken = (req, res, next) => {
             throw err;
         }
 
+        // AQUI ESTAVA O PROBLEMA → agora tá resolvido
         const verified = jwt.verify(token, JWT_SECRET);
         req.usuario = verified;
         next();
